@@ -3,7 +3,7 @@ def get_percentage(char_dict):
     for v in char_dict.values():
         sum += v
     for key in char_dict.keys():
-        char_dict[key] = char_dict[key] * 100 / sum
+        char_dict[key] *= 100 / sum
     return char_dict
 
 def get_count_char(str_):
